@@ -7,7 +7,9 @@ from flask import (Flask,render_template,request,flash,url_for,session)
 app = Flask(__name__)
 
 # app.config["SECRET_KEY"] = open("SECRET_KEY", "rb").read()
-
+@app.route('/')
+def index():
+    return render_template('index.html')
 
 @app.route('/login')
 def login():
