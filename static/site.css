@@ -1,7 +1,68 @@
-body{
-    background-color:#0cbab9;
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+  font-family: 'Montserrat', sans-serif;
 }
 
+.hello-sticker{
+  text-align: center;
+  border-radius: 8px;
+  background-color: #F25E70;
+  color: #fff;
+  padding: 3px 0;
+  margin-bottom: 50px;
+}
+
+.hello-sticker h2{
+  margin-bottom: 2px;
+}
+
+.hello-sticker form input{
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 60px;
+  text-align: center;
+  color: #111427;
+}
+
+.hello-sticker form input[name="username"]{
+  margin-bottom: 30px;
+
+}
+
+button{
+  background-color: #FEBF10;
+  color: #4B1E4D;
+  padding: 15px !important;
+  display: block;
+  margin-bottom: 20px !important;
+
+}
+
+.white{
+  color: #fff;
+}
+
+.dark-blue{
+  color: #111427;
+}
+
+button.login{
+  width: 100%;
+}
+.container-fluid{
+  background-color: #05BABD;
+  min-height: 100%;
+}
+
+.pola-header{
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+}
 
 .btn-circle-mid {
   width: 40px;
