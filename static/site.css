@@ -4,6 +4,23 @@ html {
 body {
   min-height: 100%;
   font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  text-align: center;
+  background-color: #05BABD;
+}
+
+.container-fluid{
+  min-height: 100%;
+}
+
+.navbar-brand img{
+  width: 30%;
+  height: auto;
+}
+
+body.night{
+  background-color: #111427;
+  
 }
 
 .hello-sticker{
@@ -19,7 +36,7 @@ body {
   margin-bottom: 2px;
 }
 
-.hello-sticker form input{
+form input{
   padding: 0;
   margin: 0;
   width: 100%;
@@ -33,13 +50,19 @@ body {
 
 }
 
+img.pola{
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+
+
 button{
   background-color: #FEBF10;
   color: #4B1E4D;
   padding: 15px !important;
   display: block;
   margin-bottom: 20px !important;
-
 }
 
 .white{
@@ -53,9 +76,39 @@ button{
 button.login{
   width: 100%;
 }
-.container-fluid{
-  background-color: #05BABD;
-  min-height: 100%;
+
+ul{
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+
+  position: relative;
+}
+
+li{
+  position: relative;
+  display: inline-block;
+  background-color: #FEBF10;
+  color: #4B1E4D;
+  padding: 5px 15px;
+  margin: 10px;
+  font-size: 20px;
+}
+
+li:first-child::before {
+    content: "bad";
+    position: absolute;
+    top: 62px;
+    left: 0px;
+    color: #fff;
+}
+
+li:last-child::after {
+    content: "good";
+    position: absolute;
+    top: 62px;
+    left: 0px;
+    color: #fff;
 }
 
 .pola-header{
@@ -89,4 +142,43 @@ button.login{
   font-size: 24px;
   line-height: 1.33;
   border-radius: 35px;
+}
+
+
+/*.camera::after{
+  content:"";
+  position:relative;
+  background-color: #4B1E4D;
+  width: 60px;
+  height: 60px;
+  display: block;
+  border-radius: 30px;
+  top: -10px;
+  left: -10px;
+  border: 5px #111427 solid;
+
+}*/
+
+.suggestion {
+  font-size: 30px;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid #FEBF10; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #FEBF10; }
 }
