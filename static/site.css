@@ -85,7 +85,7 @@ ul{
   position: relative;
 }
 
-li{
+ul.feel li{
   position: relative;
   display: inline-block;
   background-color: #FEBF10;
@@ -95,7 +95,7 @@ li{
   font-size: 20px;
 }
 
-li:first-child::before {
+ul.feel li:first-child::before {
     content: "bad";
     position: absolute;
     top: 62px;
@@ -103,7 +103,7 @@ li:first-child::before {
     color: #fff;
 }
 
-li:last-child::after {
+ul.feel li:last-child::after {
     content: "good";
     position: absolute;
     top: 62px;
@@ -144,6 +144,10 @@ li:last-child::after {
   border-radius: 35px;
 }
 
+.thinking-list li{
+  font-size: 25px;
+  margin-left: 10px;
+}
 
 /*.camera::after{
   content:"";
