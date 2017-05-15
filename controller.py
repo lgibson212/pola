@@ -55,6 +55,14 @@ def forgot_meds():
 def rest():
     return render_template('rest.html')
 
+@app.route('/chart')
+def chart():
+    return render_template('chart.html')
+
+@app.route('/demo')
+def demo():
+    return render_template('chart1.html')
+
 
 if __name__ == '__main__':
     app.run(host='127.0.0.1', port=5001, debug=True)

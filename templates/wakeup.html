@@ -3,7 +3,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script src="https://download.affectiva.com/js/3.2/affdex.js"></script>
-    <script type="text/javascript" src="/static/app.js"></script>
+    <script type="text/javascript" src="/static/wakeup.js"></script>
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
     <link rel="stylesheet" type="text/css" href="static/site.css?v=1">
@@ -16,6 +16,10 @@
       <div class="navbar-header">
         <a class="navbar-brand" href="#">
           <img alt="Brand" src="/static/pngs/pola-logo.png">
+          <p style="
+    font-size: 15px;
+    color: white;
+    "><i>When you take care of Pola, you take care of yourself</i></p>
         </a>
       </div>
     </div>
@@ -36,6 +40,7 @@
 </body>
 <script>
   var hr = (new Date()).getHours();
+  console.log(hr);
   if(hr < 8 || hr >22){
     $("body").addClass("night");
   }
